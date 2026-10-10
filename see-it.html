@@ -1,0 +1,175 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>See Lead Scout in action | AI the Easy Way (MOCKUP)</title>
+<meta name="robots" content="noindex,nofollow">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+<style>
+:root{--gold:#f5c542}
+.mock{background:#ff8a3d;color:#1a0a05;text-align:center;font-weight:700;font-size:13px;padding:6px 10px;letter-spacing:.04em}
+h2{max-width:28ch}@media(min-width:1000px){section h2{max-width:none}}
+.hero{padding:64px 0 70px}
+.hero h1{max-width:16ch;font-size:clamp(40px,7vw,84px)}
+.hero-bot{width:150px;margin:0 auto 6px;display:block;filter:drop-shadow(0 16px 26px rgba(0,0,0,.5))}
+.shots{display:grid;gap:70px}
+.shot-row{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.shot-row:nth-child(even) .shot-copy{order:2}
+.shot-copy h3{font-size:clamp(26px,3vw,36px);margin:8px 0 12px}.shot-copy p{color:var(--muted)}
+.shot-wrap{padding:28px 10px;border-radius:28px;background:linear-gradient(135deg,rgba(46,242,224,.10),rgba(255,138,61,.08));border:1px solid var(--line)}
+.app{background:#0d1426;border:1px solid rgba(255,255,255,.12);border-radius:18px;overflow:hidden;box-shadow:0 30px 70px -25px rgba(0,0,0,.8);font-size:15px}
+.bar{display:flex;align-items:center;gap:7px;padding:11px 14px;background:#141c33;border-bottom:1px solid var(--line);font-size:13px;color:var(--muted)}
+.bar i{width:11px;height:11px;border-radius:50%;background:#ff5f57;display:inline-block}.bar i:nth-child(2){background:#febc2e}.bar i:nth-child(3){background:#28c840}
+.bar span{margin-left:10px;font-weight:600;color:var(--text)}
+.body{padding:18px}
+.msg{max-width:88%;padding:12px 15px;border-radius:16px;margin-bottom:12px;line-height:1.45}
+.msg.u{margin-left:auto;background:linear-gradient(100deg,var(--teal),var(--cyan));color:#06121a;font-weight:600;border-bottom-right-radius:4px}
+.msg.b{background:#18213c;border:1px solid var(--line);border-bottom-left-radius:4px}
+.msg.b ul{margin:6px 0 0 18px}.msg.b li{margin:3px 0}
+.who-bot{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--teal);font-weight:700;margin-bottom:6px}
+.av{width:26px;height:26px;border-radius:8px;background:var(--grad);display:grid;place-items:center;font-size:14px}
+.exd{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#ffc49c;border:1px solid rgba(255,138,61,.45);border-radius:999px;padding:2px 9px}
+.dg-h{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:6px;flex-wrap:wrap}
+.dg-h b{font-family:"Space Grotesk";font-size:18px}
+.lead{border-top:1px solid var(--line);padding:12px 0}
+.lead .h{font-weight:700}.lead .h span{color:var(--muted);font-weight:500;font-size:13px}
+.lead q{display:block;color:var(--text);margin:4px 0 8px;quotes:"“" "”"}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:8px}
+.lc{font-size:12px;padding:3px 10px;border-radius:999px;background:rgba(34,211,238,.1);border:1px solid rgba(34,211,238,.35);color:var(--cyan)}
+.lc.t{background:rgba(255,255,255,.05);border-color:var(--line);color:var(--muted)}
+.ri{background:rgba(46,242,224,.08);border-left:3px solid var(--teal);padding:8px 12px;border-radius:8px;font-size:14px}.ri b{color:var(--teal)}
+.trend{display:grid;gap:10px}
+.tr{display:grid;grid-template-columns:40px 1fr auto;gap:12px;align-items:center;background:#141c33;border:1px solid var(--line);border-radius:14px;padding:12px}
+.tr .e{font-size:22px;text-align:center}.tr b{display:block;font-family:"Space Grotesk"}.tr small{color:var(--muted)}
+.tr .up{font-size:12px;font-weight:700;color:#7dffb0}
+.idea{margin-top:12px;padding:12px 14px;border-radius:14px;border:1px dashed rgba(245,197,66,.5);background:rgba(245,197,66,.06);font-size:14px}.idea b{color:var(--gold)}
+.phone{width:min(330px,100%);margin:0 auto;aspect-ratio:9/18.5;border-radius:44px;padding:12px;background:#05070f;border:2px solid #2a3350;box-shadow:0 30px 70px -20px rgba(0,0,0,.9)}
+.screen{height:100%;border-radius:34px;overflow:hidden;position:relative;padding:44px 14px 14px;background:radial-gradient(circle at 30% 0%,rgba(46,242,224,.35),transparent 55%),radial-gradient(circle at 90% 100%,rgba(255,138,61,.45),transparent 55%),#121a33}
+.notch{position:absolute;top:10px;left:50%;transform:translateX(-50%);width:96px;height:26px;border-radius:20px;background:#000}
+.clock{text-align:center;font-family:"Space Grotesk";font-size:64px;font-weight:600;line-height:1;margin-top:20px}
+.date{text-align:center;color:#dfe6f5;font-size:14px;margin:6px 0 26px}
+.notif{background:rgba(240,244,255,.14);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.18);border-radius:20px;padding:12px 14px;margin-bottom:10px;font-size:14px}
+.notif .top{display:flex;align-items:center;gap:8px;font-size:12px;color:#dfe6f5;margin-bottom:4px}
+.notif .top .av{width:22px;height:22px;border-radius:6px;font-size:12px}
+.notif .top em{margin-left:auto;font-style:normal}
+.notif b{display:block}
+.notif.dim{opacity:.6}
+.use{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.use .card code{display:block;margin-top:12px;font-family:Inter;font-size:14px;padding:10px 12px;border-radius:12px;background:rgba(46,242,224,.07);border:1px solid rgba(46,242,224,.25);color:var(--text)}
+.ba{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.ba .card ul{list-style:none;margin-top:10px}.ba .card li{padding:6px 0 6px 28px;position:relative;color:var(--muted)}
+.ba .bad li:before{content:"✕";position:absolute;left:0;color:var(--pink);font-weight:800}
+.ba .good{border-color:rgba(46,242,224,.45);background:linear-gradient(160deg,rgba(46,242,224,.08),rgba(167,139,250,.05))}
+.ba .good li{color:var(--text)}.ba .good li:before{content:"✓";position:absolute;left:0;color:var(--teal);font-weight:800}
+.ba .big{font-family:"Space Grotesk";font-size:44px;font-weight:700}
+.trust{display:flex;gap:18px;align-items:center;padding:24px 28px;border-radius:22px;border:1px solid rgba(46,242,224,.4);background:rgba(46,242,224,.06);font-size:18px}
+.trust .s{font-size:34px}
+.classes{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:28px}
+.classes .card b{font-family:"Space Grotesk";font-size:20px;display:block}
+.final{text-align:center}.final h2{margin-inline:auto}
+
+/* Grok Bot phone mock */
+.gp{width:390px;max-width:100%;margin:0 auto;aspect-ratio:390/844;border-radius:54px;padding:11px;background:#1b1b1d;box-shadow:0 0 0 2px #3a3a3e,0 30px 70px -20px rgba(0,0,0,.9);font-family:Inter,system-ui,sans-serif}
+.gs *{box-sizing:border-box}.gs{height:100%;border-radius:44px;overflow:hidden;background:#0a0a0a;color:#ececec;display:flex;flex-direction:column;position:relative;font-size:14px}
+.sb{display:flex;justify-content:space-between;align-items:center;padding:14px 28px 6px;font-size:14px;font-weight:600;color:#fff}
+.sb .isl{width:110px;height:30px;background:#000;border-radius:20px;box-shadow:0 0 0 1px #1a1a1a}
+.sb .ic{font-size:11px;letter-spacing:1px}
+.gh{display:flex;align-items:center;gap:10px;padding:8px 14px 10px;border-bottom:1px solid #1f1f1f}
+.gh .bk{font-size:22px;color:#aaa;width:16px}
+.bav{position:relative;width:34px;height:34px;flex:none}
+.bav .im{display:block;width:34px;height:34px;border-radius:50%;background:#1d1d20 url(assets/helper-chief.png) 50% 8%/150% auto no-repeat;overflow:hidden}
+.bav .ln{position:absolute;right:-3px;bottom:-3px;width:17px;height:17px}
+.gh .nm{flex:1;line-height:1.2}.gh .nm b{display:block;font-size:15px;color:#fff}.gh .nm small{color:#8a8a8a;font-size:12px}
+.gh .mk{width:20px;height:20px;opacity:.9}
+.gc{flex:1;overflow:hidden;padding:12px 14px;display:flex;flex-direction:column;gap:10px}
+.u{align-self:flex-end;max-width:80%;background:#26262a;border-radius:20px;padding:9px 14px;line-height:1.4;color:#f2f2f2}
+.bm{display:flex;gap:9px;line-height:1.5;color:#e6e6e6}
+.bm .bav,.bm .bav .im{display:block;width:24px;height:24px}.bm .bav .ln{width:12px;height:12px;right:-2px;bottom:-2px}
+.bm .tx{flex:1;min-width:0}.bm .tx p{margin:0 0 6px}.bm ul{margin:2px 0 6px 18px;padding:0}.bm li{margin:2px 0}
+.tm{font-size:11px;color:#6f6f6f;text-align:center}
+.rt{border:1px solid #2a2a2e;background:#141416;border-radius:14px;padding:9px 12px;display:flex;gap:10px;align-items:center;margin-top:6px}
+.rt .i{width:28px;height:28px;border-radius:8px;background:#222;display:grid;place-items:center;font-size:14px}.rt b{display:block;color:#fff;font-size:13px}.rt small{color:#8a8a8a;font-size:12px}
+.gl{margin:6px 0;padding:8px 0;border-top:1px solid #222}.gl .h{font-weight:600;color:#fff;font-size:13px}.gl .h span{color:#8a8a8a;font-weight:400}
+.gl q{display:block;margin:3px 0 5px;color:#d6d6d6;font-size:13px}
+.chip{display:inline-flex;align-items:center;gap:5px;font-size:12px;padding:3px 10px;border-radius:999px;border:1px solid #333;color:#ddd;background:#18181b}
+.ri2{font-size:13px;color:#cfcfcf;margin-top:5px}.ri2 b{color:#fff}
+.ex{font-size:10px;color:#777;letter-spacing:.06em;text-transform:uppercase}
+.cmp{margin:6px 12px 14px;border:1px solid #2a2a2e;background:#151517;border-radius:26px;padding:11px 14px;display:flex;align-items:center;gap:10px;color:#777}
+.cmp .ph{flex:1}.cmp .pl{font-size:20px;color:#999}.cmp .snd{width:30px;height:30px;border-radius:50%;background:#fff;color:#000;display:grid;place-items:center;font-weight:700}
+.ls{background:radial-gradient(circle at 30% 10%,#2b3f66,transparent 60%),radial-gradient(circle at 80% 90%,#6b3a1f,transparent 60%),#0d0f16}
+.ls .cl{text-align:center;font-size:80px;font-weight:600;color:#fff;line-height:1;margin-top:34px;letter-spacing:-2px}
+.ls .dt{text-align:center;color:#e5e5e5;font-size:16px;font-weight:500;margin:6px 0 0}
+.nf{margin:0 10px 8px;background:rgba(40,40,46,.72);backdrop-filter:blur(14px);border-radius:22px;padding:12px 13px;display:flex;gap:11px;color:#fff;font-size:14px;line-height:1.35}
+.nf .ai{width:38px;height:38px;border-radius:9px;background:#000;display:grid;place-items:center;flex:none;box-shadow:0 0 0 1px #333}.nf .ai img{width:24px}
+.nf .t{flex:1}.nf .t .r{display:flex;justify-content:space-between;font-size:13px}.nf .t .r em{font-style:normal;color:#bbb;font-size:12px}
+.nf.d{opacity:.7}
+.lsb{margin-top:auto;display:flex;justify-content:space-between;padding:0 40px 30px;font-size:20px}.lsb i{width:48px;height:48px;border-radius:50%;background:rgba(40,40,46,.7);display:grid;place-items:center;font-style:normal}
+footer{border-top:1px solid var(--line);padding:30px 0;color:var(--muted);font-size:14px;text-align:center}
+@media(max-width:900px){.shot-row,.ba,.classes{grid-template-columns:1fr}.shot-row:nth-child(even) .shot-copy{order:0}.use{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr}.nav-links a:not(.btn){display:none}}
+@media(max-width:600px){.gp{zoom:.86}.use{grid-template-columns:1fr}.shot-wrap{padding:12px}section{padding:60px 0}.trust{flex-direction:column;text-align:center;font-size:16px}.cta-row .btn{width:100%;justify-content:center}}
+</style>
+<script>const PRODUCT="Lead Scout";addEventListener("DOMContentLoaded",()=>{document.querySelectorAll(".pn").forEach(e=>e.textContent=PRODUCT);document.title=document.title.replace("Lead Scout",PRODUCT)})</script>
+</head><body>
+<div class="mock">MOCKUP / PREVIEW — not live. Screens are illustrations with example data only.</div>
+<div class="bg-glow"><div class="blob t" style="top:-200px;left:-200px"></div><div class="blob o" style="top:1400px;right:-300px"></div><div class="blob v" style="top:3200px;left:-300px"></div><div class="grid-bg"></div></div>
+<nav><div class="wrap"><a class="logo" href="index.html"><img class="logo-mark" src="assets/logo-ai-the-easy-way.png" alt="AI the Easy Way"></a>
+<div class="nav-links"><a href="#see">See it work</a><a href="#use">Use it for</a><a href="#get-it">How to get it</a><a class="btn btn-sunset btn-sm" href="index.html#get">Get it free</a></div></div></nav>
+
+<header class="hero"><div class="wrap">
+<img class="hero-bot" src="assets/helper-chief.png" alt="Helper robot">
+<span class="pill"><span class="pulse"></span>Free AI teammate · <span class="pn">Lead Scout</span></span>
+<h1>Your AI teammate finds the conversations. <span class="grad-text">You just have your coffee.</span></h1>
+<p class="lede">While you start your morning, <span class="pn">Lead Scout</span> searches X for people in your area asking for what you do, then hands you a short list with who's asking, the link, and a friendly reply idea.</p>
+<div class="cta-row"><a class="btn btn-sunset" href="index.html#get">Get <span class="pn">Lead Scout</span> free <span class="arrow">→</span></a><a class="btn btn-ghost" href="#see">See it work ↓</a></div>
+<p class="tiny">It never posts or messages anyone on its own. You stay in control.</p>
+</div></header>
+
+<section id="see"><div class="wrap"><span class="eyebrow">See it work</span><h2>Here's what a morning with <span class="pn">Lead Scout</span> looks like</h2><p class="section-sub">Illustrations of the teammate in action. Handles and posts are made-up example data.</p>
+<div class="shots">
+
+<div class="shot-row"><div class="shot-copy"><span class="eyebrow o">1 · Just ask</span><h3>Tell it what to look for, in plain English</h3><p>No keywords or settings to learn. Type who you want to find and where, and your teammate goes looking.</p></div>
+<div class="shot-wrap" id="shot-1"><div class="gp"><div class="gs"><div class="sb"><span>4:13</span><span class="isl"></span><span class="ic">▮▮▮ ◠ ▭</span></div><div class="gh"><span class="bk">‹</span><span class="bav"><span class="im"></span><img class="ln" src="assets/lens.svg" alt=""></span><span class="nm"><b>Lead Scout</b><small>Teammate</small></span><img class="mk" src="assets/grok-mark.svg" alt="Grok"></div><div class="gc"><div class="tm">Today 4:12 PM</div><div class="u">Find people near Lake of the Ozarks asking for a roofer</div><div class="bm"><span class="bav"><span class="im"></span><img class="ln" src="assets/lens.svg" alt=""></span><div class="tx"><p>I searched recent posts on X around Lake of the Ozarks and found <b>4 people</b> asking about roof work in the last 24 hours:</p><ul><li>Hail damage, Osage Beach</li><li>Leaking porch roof, Camdenton</li><li>2 asking for roofer recommendations</li></ul><p>Want me to check every weekday at 7 AM and send you a short list with a reply idea for each?</p></div></div><div class="u">Yes please</div><div class="bm"><span class="bav"><span class="im"></span><img class="ln" src="assets/lens.svg" alt=""></span><div class="tx"><p>Done ✅ I set up a routine.</p><div class="rt"><span class="i">⏰</span><span><b>Morning roofer leads</b><small>Every weekday at 7:00 AM</small></span></div></div></div><div class="ex">Example data</div></div><div class="cmp"><span class="pl">+</span><span class="ph">Message Lead Scout</span><span>🎙</span></div></div></div></div></div>
+
+<div class="shot-row"><div class="shot-copy"><span class="eyebrow o">2 · Your morning list</span><h3>A short list of people worth talking to</h3><p>Each one shows who's asking, a link to the post, and a reply idea written in a friendly, helpful tone. You decide whether to reply.</p></div>
+<div class="shot-wrap" id="shot-2"><div class="gp"><div class="gs"><div class="sb"><span>7:02</span><span class="isl"></span><span class="ic">▮▮▮ ◠ ▭</span></div><div class="gh"><span class="bk">‹</span><span class="bav"><span class="im"></span><img class="ln" src="assets/lens.svg" alt=""></span><span class="nm"><b>Lead Scout</b><small>Teammate</small></span><img class="mk" src="assets/grok-mark.svg" alt="Grok"></div><div class="gc"><div class="tm">Tue 7:00 AM</div><div class="bm"><span class="bav"><span class="im"></span><img class="ln" src="assets/lens.svg" alt=""></span><div class="tx"><p><b>☕ Morning list: roofer near Lake of the Ozarks</b><br><span class="ex">Example data</span></p><div class="gl"><div class="h">@example_lakehouse_jen <span>· Osage Beach · 2h</span></div><q>Hail got our roof last week. Anyone know a roofer who actually calls back?</q><span class="chip">𝕏 View on X ↗</span><div class="ri2"><b>Reply idea:</b> So sorry about the hail! We're local and happy to take a look this week, no pressure.</div></div><div class="gl"><div class="h">@example_camdenton_mike <span>· Camdenton · 5h</span></div><q>Porch roof is leaking on the lake house. Need someone before the weekend.</q><span class="chip">𝕏 View on X ↗</span><div class="ri2"><b>Reply idea:</b> No fun before a lake weekend. Happy to share a quick fix while you line someone up.</div></div><div class="gl"><div class="h">@example_ozarks_newbie <span>· Lake Ozark · 9h</span></div><q>New to the area, who do you all use for roofing?</q><span class="chip">𝕏 View on X ↗</span><div class="ri2"><b>Reply idea:</b> Welcome to the lake! Here's what to ask any roofer you call…</div></div></div></div></div><div class="cmp"><span class="pl">+</span><span class="ph">Message Lead Scout</span><span>🎙</span></div></div></div></div></div>
+
+<div class="shot-row"><div class="shot-copy"><span class="eyebrow o">3 · Post ideas, too</span><h3>Know what your area is talking about</h3><p>It spots what's trending near you and turns it into ideas for your own social posts, so you're never staring at a blank screen.</p></div>
+<div class="shot-wrap" id="shot-3"><div class="gp"><div class="gs"><div class="sb"><span>7:05</span><span class="isl"></span><span class="ic">▮▮▮ ◠ ▭</span></div><div class="gh"><span class="bk">‹</span><span class="bav"><span class="im"></span><img class="ln" src="assets/lens.svg" alt=""></span><span class="nm"><b>Lead Scout</b><small>Teammate</small></span><img class="mk" src="assets/grok-mark.svg" alt="Grok"></div><div class="gc"><div class="tm">Tue 7:00 AM</div><div class="bm"><span class="bav"><span class="im"></span><img class="ln" src="assets/lens.svg" alt=""></span><div class="tx"><p><b>📈 Trending near Lake of the Ozarks this week</b><br><span class="ex">Example data</span></p><ol style="margin:4px 0 8px 18px;padding:0"><li><b>Hail and storm cleanup</b> — people swapping contractor tips</li><li><b>Fall lake house prep</b> — winterizing docks and roofs</li><li><b>Weekend fall festivals</b> — where to go with the kids</li></ol><p><b>⭐ Post idea for today:</b> "3 things to check on your roof after a hail storm" with a quick photo checklist. Helpful, local and timely.</p><p>Want me to draft the caption?</p></div></div><div class="u">Yes, keep it short</div></div><div class="cmp"><span class="pl">+</span><span class="ph">Message Lead Scout</span><span>🎙</span></div></div></div></div></div>
+
+<div class="shot-row"><div class="shot-copy"><span class="eyebrow o">4 · It comes to you</span><h3>A quick heads-up when there's something new</h3><p>Check your list when it suits you. Two minutes with your coffee and you know who to reach out to today.</p></div>
+<div class="shot-wrap" id="shot-4"><div class="gp"><div class="gs ls"><div class="sb"><span></span><span class="isl"></span><span class="ic">▮▮▮ ◠ ▭</span></div><div class="cl">7:00</div><div class="dt">Tuesday, October 13</div><div style="height:40px"></div><div class="nf"><span class="ai"><img src="assets/grok-mark.svg" alt=""></span><div class="t"><div class="r"><b>Grok Bot</b><em>now</em></div><b>Lead Scout</b><br>Found 4 new conversations near Lake of the Ozarks</div></div><div class="nf d"><span class="ai"><img src="assets/grok-mark.svg" alt=""></span><div class="t"><div class="r"><b>Grok Bot</b><em>now</em></div><b>Lead Scout</b><br>Trending: hail cleanup. A post idea is ready.</div></div><p style="text-align:center"><span class="ex">Example data</span></p><div class="lsb"><i>🔦</i><i>📷</i></div></div></div></div></div>
+
+</div><p style="text-align:center;margin-top:28px;color:#9aa;font-size:14px;display:flex;gap:8px;justify-content:center;align-items:center">A teammate inside the Grok Bot app · Powered by <img src="assets/grok-mark.svg" alt="" style="width:18px;height:18px"> Grok</p></div></section>
+
+<section id="use"><div class="wrap"><span class="eyebrow">Use it for</span><h2>Any topic. Any town. Here are a few ideas.</h2>
+<div class="use">
+<div class="card"><div class="emoji">🏠</div><h3>Roofers & contractors</h3><p>Find people asking for repairs and quotes.</p><code>"Anyone asking for a roofer or handyman in Camdenton?"</code></div>
+<div class="card warm"><div class="emoji">🔑</div><h3>Realtors</h3><p>Spot people talking about moving to your area.</p><code>"People thinking about moving to Lake of the Ozarks"</code></div>
+<div class="card"><div class="emoji">🍔</div><h3>Restaurants & events</h3><p>See who's looking for things to do.</p><code>"Where to eat or what to do at the lake this weekend"</code></div>
+<div class="card warm"><div class="emoji">🤝</div><h3>Networkers</h3><p>Find local business owners asking for referrals.</p><code>"Small business owners asking for recommendations in Osage Beach"</code></div>
+<div class="card"><div class="emoji">🎥</div><h3>Creators</h3><p>Catch the questions your audience is asking.</p><code>"Beginners asking how to use AI tools"</code></div>
+<div class="card warm"><div class="emoji">💛</div><h3>Local nonprofits</h3><p>Find people who want to help or need help.</p><code>"People looking to volunteer near Lake Ozark"</code></div>
+</div></div></section>
+
+<section><div class="wrap"><span class="eyebrow">Before vs after</span><h2>Stop scrolling. Start with a short list.</h2>
+<div class="ba">
+<div class="card bad"><span class="exd" style="color:#ff9fb2;border-color:rgba(255,94,126,.45)">Before</span><div class="big">Hours of scrolling</div><ul><li>Searching hashtags and groups by hand</li><li>Finding posts days after someone already hired</li><li>Not sure what to say when you do find one</li></ul></div>
+<div class="card good"><span class="exd" style="color:var(--teal);border-color:rgba(46,242,224,.45)">After</span><div class="big grad-text">A 2-minute morning list</div><ul><li>Fresh conversations, already found for you</li><li>Who's asking, the link, and where they are</li><li>A friendly reply idea you can make your own</li></ul></div>
+</div></div></section>
+
+<section id="get-it"><div class="wrap"><span class="eyebrow">How do I get it?</span><h2>Three simple steps</h2>
+<div class="steps">
+<div class="card step"><div class="num">1</div><div class="when">Today</div><h3>Grab it free</h3><p>Get the <span class="pn">Lead Scout</span> teammate template and setup guide sent to your inbox.</p></div>
+<div class="card step"><div class="num">2</div><div class="when">Your pace</div><h3>Set it up</h3><p>Follow the step-by-step guide, or set it up with us at Free Grok 101.</p></div>
+<div class="card step"><div class="num">3</div><div class="when">Tomorrow morning</div><h3>Get your first list</h3><p>Wake up to your first short list of people worth talking to.</p></div>
+</div>
+<div class="cta-row" style="margin-top:34px"><a class="btn btn-sunset" href="index.html#get">Get <span class="pn">Lead Scout</span> free <span class="arrow">→</span></a></div>
+<div class="classes">
+<div class="card"><span class="eyebrow">Free class</span><b>Free Grok 101 · Wed, Oct 21 at noon</b><p>Osage Beach Library. Bring your questions and set up your teammate with help. Save your seat at <a href="https://free.mysihelpers.com">free.mysihelpers.com</a></p></div>
+<div class="card warm"><span class="eyebrow o">Hands-on class</span><b>$97 AI Helpers class · date coming soon</b><p>Set up <span class="pn">Lead Scout</span> hands-on, plus get it as a bonus with your other AI helpers. Details at <a href="https://mysihelpers.com">mysihelpers.com</a></p></div>
+</div></div></section>
+
+<section style="padding-top:0"><div class="wrap"><div class="trust"><span class="s">🛡️</span><div><b>You stay in control.</b> <span class="pn">Lead Scout</span> never posts, replies, or messages anyone on its own. It finds and suggests; you decide.</div></div></div></section>
+
+<section class="final"><div class="wrap"><h2>Your next customer might be <span class="grad-text">asking right now.</span></h2><p class="lede" style="margin:0 auto 24px;color:var(--muted)">Get your free teammate and start tomorrow with a short list.</p><a class="btn btn-sunset" href="index.html#get">Get <span class="pn">Lead Scout</span> free <span class="arrow">→</span></a></div></section>
+
+<footer><div class="wrap">© 2026 Chris Booth · AI the Easy Way · mysihelpers.com<br>Grok is a trademark of xAI. Independent class, not affiliated with xAI. X is a trademark of X Corp. Screens shown are illustrations with example data.</div></footer>
+</body></html>
